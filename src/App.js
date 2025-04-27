@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './LoginPage';
+import ManageMenu from './ManageMenu';
+import AddMenu from './AddMenu';
+import ManageUser from './ManageUser'; // ✅ เพิ่มตรงนี้
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/manage" element={<ManageMenu />} />
+        <Route path="/add" element={<AddMenu />} />
+        <Route path="/users" element={<ManageUser />} /> 
+      </Routes>
+    </Router>
   );
 }
 

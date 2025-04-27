@@ -1,0 +1,21 @@
+.user-table {
+  width: 90%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  font-family: 'Kanit', sans-serif;
+}
+
+.user-table th, .user-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.apply-btn {
+  background-color: #3DD598;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
