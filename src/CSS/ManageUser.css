@@ -11,11 +11,28 @@
   text-align: center;
 }
 
-.apply-btn {
-  background-color: #3DD598;
-  border: none;
-  color: white;
+button {
+  margin-right: 10px; /* เพิ่มระยะห่างระหว่างปุ่ม */
+  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.reset-btn {
+  background-color: #3DD598;
+  border: none;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #FF6F61;
+  border: none;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #FF4444;
+  border: none;
+  color: white;
 }
